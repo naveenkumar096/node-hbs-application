@@ -35,6 +35,15 @@ app.get('/',(req,res)=>{
   });
 });
 
+app.get('/projects',(req,res)=>{
+
+  res.render('home.hbs',{
+    pageTitle:'Projects',
+    welcomemessage:'welcome to Projects Page'
+
+  });
+});
+
 
 
 app.get('/about',(req,res)=>{
